@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/test" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vibrant"
+                android:onClick="onClick"/>
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Vibrant Dark"
+                android:onClick="onClick"/>
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Vibrant light"
+                android:onClick="onClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muted"
+                android:onClick="onClick"/>
+            <Button
+                android:id="@+id/bt5"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Muted Dark"
+                android:onClick="onClick"/>
+            <Button
+                android:id="@+id/bt6"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Muted light"
+                android:onClick="onClick"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
